@@ -1,11 +1,11 @@
 <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs justify-content-center nav-fill">
   <li *ngFor="let id of tabs" [ngbNavItem]="id">
     <a ngbNavLink>
-      Tab {{ id }}
+      {{ id }}
       <!-- <span class="close position-relative pl-2 font-weight-light" (click)="close($event, id)">×</span> -->
     </a>
     <ng-template ngbNavContent>
-      <p>Tab {{ id }} content</p>
+      <p> {{ id }} content</p>
     </ng-template>
   </li>
   <!-- <li class="nav-item">
